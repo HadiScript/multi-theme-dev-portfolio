@@ -1,0 +1,30 @@
+* {
+  font-family: "Fira Code", monospace;
+}
+
+.custom-cursor {
+  cursor: url("../../public/mine-cursor.png"), auto;
+}
+
+/* Use a predefined cursor style */
+.pointer-cursor {
+  cursor: pointer;
+}
+
+.table {
+  --bs-table-bg: transparent !important;
+  --bs-table-color: white !important;
+}
+
+.table-row {
+  margin: 0;
+  transition: all 150ms ease-in-out;
+}
+
+.table-row::before {
+  /* content: ""; */
+}
+
+.table:has(.table-row:hover) .table-row:not(:hover) {
+  filter: blur(1px);
+}

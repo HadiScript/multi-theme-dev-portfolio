@@ -1,0 +1,38 @@
+.little {
+  color: #355c7d;
+
+  font-weight: 800;
+  font-size: 20px;
+  /* margin: 0 0 0 35%; */
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 80%;
+  animation: type 1s steps(40, end) forwards;
+}
+
+.big {
+  /* opacity: 0; */
+  font-family: "Work Sans", sans-serif;
+  margin: 0 auto auto auto;
+  background: linear-gradient(to right, #b5b5b5, #898989, #fdfdfd);
+  font-weight: 800;
+  font-size: 50px;
+  width: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* overflow: hidden; */
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%,
+  99% {
+    border-right: 1px solid orange;
+  }
+  100% {
+    border-right: none;
+  }
+}
